@@ -1,0 +1,104 @@
+body {
+  background-color: #212529;
+  color: white;
+}
+
+.uno li {
+  margin: auto 15px auto 15px;
+}
+
+.dos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  padding: 150px 15% 50px;
+}
+
+.dos h1 {
+  color: #0d6efd;
+  font-size: 60px;
+}
+
+.dos p {
+  color: white;
+  font-size: 20px;
+}
+
+.tres h1 {
+  color: #0d6efd;
+  margin: auto 0 auto 15%;
+}
+
+.tres .list {
+  margin: 30px 20%;
+}
+
+/* .tres {
+  margin-bottom: 50px;
+} */
+
+.tres h4 {
+  color: #0d6efd;
+}
+
+.tres .listtwo {
+  margin: 30px 20%;
+}
+
+.tres a {
+  text-decoration: none;
+  color: white;
+}
+
+#tres,
+#quatro,
+#cinco,
+#sies {
+  height: 60px;
+}
+
+/* .quatro {
+  margin-bottom: 50px;
+} */
+
+.quatro h1 {
+  color: #0d6efd;
+  margin: auto 0 auto 15%;
+}
+
+.quatro .card {
+  background-color: #212529;
+  border-color: #0d6efd;
+  border-radius: 0px 23px;
+  margin: 25px;
+  text-align: center;
+}
+
+.quatro a {
+  text-decoration: none;
+}
+
+.cinco h1 {
+  color: #0d6efd;
+  margin: auto 0 auto 15%;
+}
+
+.cinco .card {
+  background-color: #212529;
+  border-color: #0d6efd;
+  border-radius: 15px;
+  margin: 25px;
+  text-align: center;
+}
+
+.row {
+  padding: 0 15%;
+}
+
+@media (max-width: 1200px) {
+  .dos {
+    display: flex;
+    flex-direction: column;
+  }
+}
