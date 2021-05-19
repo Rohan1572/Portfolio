@@ -92,6 +92,23 @@ nav{
   padding: 0 15%;
 }
 
+.sies h1 {
+  color: #0d6efd;
+  margin: auto 0 auto 15%;
+}
+
+.sies img{
+  color: #0d6efd;
+}
+
+.sies .card {
+  background-color: #1b1b1b;
+  border-color: #0d6efd;
+  border-radius: 10px;
+  margin: 25px;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .dos {
     display: flex;
