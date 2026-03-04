@@ -3,8 +3,8 @@ import styles from '../styles/Contact.module.css';
 function Contact() {
   return (
     <section id="contact" className={styles.contact}>
-      <h2>Let&apos;s Build Something Impactful</h2>
-      <p>Open to frontend and fintech product engineering roles. Reach out for collaboration or opportunities.</p>
+      <h2>Let&apos;s Connect</h2>
+      <p>Open to frontend and product engineering opportunities, collaborations, and impactful projects.</p>
       <form className={styles.form}>
         <label htmlFor="name">Name</label>
         <input id="name" name="name" type="text" placeholder="Your name" required />
@@ -18,12 +18,9 @@ function Contact() {
         <button type="submit">Send Message</button>
       </form>
       <div className={styles.links}>
-        <a href="mailto:rohan@example.com">Email</a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+        <a href="mailto:hellorohan02@gmail.com">Email</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
           LinkedIn
-        </a>
-        <a href="https://github.com" target="_blank" rel="noreferrer">
-          GitHub
         </a>
       </div>
     </section>
