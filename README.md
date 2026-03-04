@@ -52,6 +52,11 @@ A recruiter-focused, high-performance portfolio built with React + Vite. The des
 └── vite.config.js
 ```
 
+## Runtime Requirement
+
+- Node.js 22+ is required (Agent Runners and local development).
+- This repo pins Node via `.nvmrc` and `.node-version` to reduce environment drift.
+
 ## Run Locally
 
 ```bash
