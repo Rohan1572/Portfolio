@@ -1,0 +1,17 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  backdrop-filter: blur(10px);
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  border-bottom: 1px solid var(--border);
+}
+.brand { font-weight: 800; color: var(--accent); }
+.navList { display: none; list-style: none; gap: 1rem; padding: 0; }
+.navList a { font-size: 0.95rem; color: var(--text-soft); }
+.toggle { border: 1px solid var(--border); background: var(--bg-card); border-radius: 999px; padding: 0.45rem 0.7rem; }
+@media (min-width: 860px) { .navList { display: flex; } }
