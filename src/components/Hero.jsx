@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import styles from '../styles/Hero.module.css';
 
 const metrics = [
-  { label: 'Enterprise Programs', value: '10+' },
-  { label: 'Avg. Load-time Gain', value: '35%' },
-  { label: 'Domain Focus', value: 'Fintech + Security' },
+  { label: 'Experience', value: '1+ Year' },
+  { label: 'Domain', value: 'Banking & Finance' },
+  { label: 'Current Role', value: 'Deloitte India' },
 ];
 
 function Hero() {
@@ -12,10 +12,10 @@ function Hero() {
     <section id="home" className={styles.hero}>
       <div className={styles.content}>
         <motion.p initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}>
-          Frontend Developer at Deloitte · Ex-EY Intern · VIT CSE (InfoSec)
+          Front-End Developer · New Delhi, India
         </motion.p>
         <motion.h1 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-          I engineer secure, conversion-ready fintech interfaces that scale.
+          Building Secure, Scalable Frontends for Modern Financial Systems
         </motion.h1>
         <motion.p
           className={styles.tagline}
@@ -23,7 +23,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          React specialist focused on frontend architecture, performance, and trusted banking experiences.
+          Frontend Developer at Deloitte | VIT CSE (InfoSec) | Crafting high-performance fintech experiences with React
         </motion.p>
         <div className={styles.actions}>
           <a href="#projects" className={styles.primary}>

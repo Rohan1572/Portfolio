@@ -6,13 +6,25 @@ function About() {
     <section id="about" className={styles.about}>
       <h2>About Me</h2>
       <p>
-        I am a frontend developer with enterprise experience building customer-facing systems for major financial institutions.
-        At Deloitte, I architect interfaces that balance performance, accessibility, and compliance. With an Information
-        Security background from VIT, I naturally embed secure-by-design thinking into every product decision.
+        I&apos;m a Frontend Developer at Deloitte, building scalable and performance-driven digital platforms for financial
+        institutions.
       </p>
       <p>
-        I specialize in React ecosystems, frontend architecture, and creating trustworthy user experiences for fintech and
-        banking workflows.
+        With a background in Computer Science (Information Security) from Vellore Institute of Technology, I bring a
+        security-first mindset to frontend engineering — ensuring not just beautiful interfaces, but resilient and
+        trustworthy systems.
+      </p>
+      <p>
+        I specialize in React-based architectures, performance optimization, and building modular, maintainable UI systems
+        used in enterprise environments.
+      </p>
+      <p>
+        Previously, during my internship at EY, I gained hands-on exposure to enterprise workflows and large-scale
+        application development.
+      </p>
+      <p>
+        I&apos;m particularly interested in fintech, secure digital banking experiences, and building frontend systems that
+        operate at scale with precision.
       </p>
       <div className={styles.grid}>
         {Object.entries(skillGroups).map(([category, skills]) => (
