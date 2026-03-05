@@ -2,20 +2,33 @@ import { FormEvent, useState } from 'react';
 
 export default function Contact() {
   const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const body = Object.fromEntries(formData.entries());
 
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    });
+    setIsSubmitting(true);
+    setStatus('');
 
-    setStatus(response.ok ? 'Message sent successfully.' : 'Unable to send message.');
-    if (response.ok) event.currentTarget.reset();
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+
+      const data = await response.json().catch(() => ({ message: 'Unable to send message.' }));
+      setStatus(data.message ?? (response.ok ? 'Message sent successfully.' : 'Unable to send message.'));
+
+      if (response.ok) form.reset();
+    } catch {
+      setStatus('Unexpected error. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -33,7 +46,9 @@ export default function Contact() {
           <input name="name" placeholder="Name" required className="input" />
           <input name="email" type="email" placeholder="Email" required className="input" />
           <textarea name="message" placeholder="Message" rows={5} required className="input" />
-          <button className="btn-primary" type="submit">Send Message</button>
+          <button className="btn-primary disabled:opacity-60" type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Send Message'}
+          </button>
           {status && <p className="text-sm text-accent">{status}</p>}
         </form>
       </div>

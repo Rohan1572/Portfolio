@@ -1,5 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+.next/
+out/
+dist/
+dist-ssr/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,15 +16,24 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Test coverage
+coverage/
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 *.local
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*

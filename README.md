@@ -80,6 +80,14 @@ src/
    npm run start
    ```
 
+## Contact API Configuration
+
+The contact form sends email using Resend. Set these environment variables before using `/api/contact`:
+
+- `RESEND_API_KEY`
+- `CONTACT_TO_EMAIL`
+- `CONTACT_FROM_EMAIL` (optional, defaults to `onboarding@resend.dev`)
+
 ## Deployment
 
 Deploy easily to Vercel:
