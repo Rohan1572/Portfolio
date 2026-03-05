@@ -23,8 +23,10 @@ export default function Contact() {
       <h2 className="section-title">Contact</h2>
       <div className="grid lg:grid-cols-2 gap-8 mt-8">
         <div className="card space-y-3">
-          <p><strong>Email:</strong> rohan.gupta.dev@gmail.com</p>
-          <p><strong>LinkedIn:</strong> linkedin.com/in/rohan-gupta</p>
+          <p><strong>Email:</strong> hellorohan02@gmail.com</p>
+          <p><strong>Phone:</strong> +91 88267 12033</p>
+          <p><strong>Location:</strong> New Delhi, India</p>
+          <p><strong>LinkedIn:</strong> linkedin.com/in/rohan-gupta-51b16615a</p>
           <p><strong>GitHub:</strong> github.com/Rohan1572</p>
         </div>
         <form onSubmit={handleSubmit} className="card space-y-4">

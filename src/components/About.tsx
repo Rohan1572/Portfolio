@@ -7,8 +7,9 @@ export default function About() {
       <h2 className="section-title">About</h2>
       <div className="card mt-6">
         <p>
-          I design premium frontend systems for fintech products where trust, speed, and compliance matter.
-          My work focuses on scalable architecture, secure UI patterns, and experiences that make complex workflows feel effortless.
+          Frontend Developer with 1.5 years of experience building scalable digital banking platforms using React.js,
+          Next.js, and TypeScript. I focus on performance-driven web apps, resilient REST API integrations,
+          responsive UI architecture, and maintainable component systems for enterprise teams.
         </p>
       </div>
     </motion.section>
