@@ -1,5 +1,0 @@
-.timeline { display: grid; gap: 1rem; }
-.item { background: var(--bg-card); border: 1px solid var(--border); border-radius: 1rem; padding: 1rem; }
-.item header { margin-bottom: 0.8rem; }
-.item p, .item span, .item li { color: var(--text-soft); }
-.item li { margin-bottom: 0.5rem; line-height: 1.5; }

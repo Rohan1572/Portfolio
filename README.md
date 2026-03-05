@@ -1,83 +1,97 @@
-# Premium Fintech Portfolio
+# Premium FinTech Portfolio
 
-A recruiter-focused, high-performance portfolio built with React + Vite. The design language follows a modern fintech SaaS aesthetic with clear impact storytelling, reusable components, and dark/light theming.
+A recruiter-focused developer portfolio designed like a SaaS landing page instead of a static resume. The experience emphasizes trust, performance, and storytelling for fintech product engineering.
 
-## Highlights
+## Overview
 
-- Mobile-first responsive layout with semantic sections.
-- Smooth, subtle animations powered by Framer Motion.
-- Dark/light theme toggle with local storage persistence.
-- Recruiter-oriented content architecture (impact-first achievements and project outcomes).
-- Project filtering by category (Fintech, Security, Web App).
-- SEO-ready metadata and Open Graph tags in `index.html`.
-- CSS Modules for scoped styling and long-term maintainability.
+This refactor upgrades the portfolio into a modular Next.js architecture with:
+
+- animated hero and section reveals (Framer Motion)
+- dynamic project filtering
+- dark/light theme toggle
+- loading and page transition animations
+- timeline-based experience section
+- interactive contact form via API route
+- responsive fintech-inspired design system using Tailwind CSS
 
 ## Tech Stack
 
-- React 18
-- Vite 5
-- Framer Motion
-- CSS Modules
+- **Framework:** Next.js (Pages Router)
+- **UI:** React + TypeScript
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Icons:** React Icons
 
-## Folder Structure
+## Architecture
 
 ```text
-.
-├── public/
-│   ├── favicon.svg
-│   └── og-image.svg
-├── src/
-│   ├── components/
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Experience.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── Hero.jsx
-│   │   ├── LoadingScreen.jsx
-│   │   ├── Projects.jsx
-│   │   ├── SecurityEdge.jsx
-│   │   └── Skills.jsx
-│   ├── data/
-│   │   └── content.js
-│   ├── hooks/
-│   │   └── useTheme.js
-│   ├── styles/
-│   │   ├── *.module.css
-│   │   └── global.css
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-├── package.json
-└── vite.config.js
+src/
+  animations/
+    fadeIn.ts
+    stagger.ts
+  components/
+    About.tsx
+    Contact.tsx
+    Experience.tsx
+    Footer.tsx
+    Hero.tsx
+    Navbar.tsx
+    Projects.tsx
+    Skills.tsx
+    ThemeToggle.tsx
+  data/
+    experience.ts
+    projects.ts
+    skills.ts
+  pages/
+    api/
+      contact.ts
+    _app.tsx
+    index.tsx
+  styles/
+    globals.css
 ```
 
-## Runtime Requirement
+## Features
 
-- Node.js 22+ is required (Agent Runners and local development).
-- This repo pins Node via `.nvmrc` and `.node-version` to reduce environment drift.
+- **Premium Hero:** Animated gradient, strong positioning statement, and rotating capability text.
+- **Project Showcase:** Interactive cards with category filters (All, FinTech, Web Apps, Tools).
+- **Skill Intelligence:** Category-based animated skill grid with icons.
+- **Experience Storytelling:** Scroll-animated vertical timeline for Deloitte and EY roles.
+- **UX Enhancements:** Smooth scrolling, dark/light mode, custom cursor effect, transitions.
+- **Performance-minded setup:** Dynamic import for Projects section, optimized `next/image`, metadata for SEO + Open Graph.
 
-## Run Locally
+## Getting Started
 
-```bash
-npm install
-npm run dev
-```
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run development server:
+   ```bash
+   npm run dev
+   ```
+3. Build production bundle:
+   ```bash
+   npm run build
+   ```
+4. Start production server:
+   ```bash
+   npm run start
+   ```
 
-For production build validation:
+## Deployment
 
-```bash
-npm run build
-```
+Deploy easily to Vercel:
 
-## Customization Tips
+- Import repository
+- Keep defaults
+- Deploy
 
-- Update profile and contact links in `src/components/Contact.jsx`.
-- Replace placeholder demo/GitHub links in `src/data/content.js`.
-- Adjust the color system in `src/styles/global.css`.
-- Extend sections while preserving semantic structure for SEO and accessibility.
+## Customization Notes
 
+- Update project data: `src/data/projects.ts`
+- Update experience: `src/data/experience.ts`
+- Update skills: `src/data/skills.ts`
+- Replace social/contact identity in `src/components/Contact.tsx`
 
-## Note on Assets
-
-This version uses text-based SVG assets to keep repository diffs PR-friendly and avoid binary-artifact issues in automated review pipelines.
