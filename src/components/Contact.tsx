@@ -23,11 +23,11 @@ export default function Contact() {
       <h2 className="section-title">Contact</h2>
       <div className="grid lg:grid-cols-2 gap-8 mt-8">
         <div className="card space-y-3">
-          <p><strong>Email:</strong> hellorohan02@gmail.com</p>
+          <p><strong>Email:</strong> <a className="text-primary underline" href="mailto:hellorohan02@gmail.com">hellorohan02@gmail.com</a></p>
           <p><strong>Phone:</strong> +91 88267 12033</p>
           <p><strong>Location:</strong> New Delhi, India</p>
-          <p><strong>LinkedIn:</strong> linkedin.com/in/rohan-gupta-51b16615a</p>
-          <p><strong>GitHub:</strong> github.com/Rohan1572</p>
+          <p><strong>LinkedIn:</strong> <a className="text-primary underline" href="https://www.linkedin.com/in/rohan-gupta-51b16615a/" target="_blank" rel="noreferrer">linkedin.com/in/rohan-gupta-51b16615a</a></p>
+          <p><strong>GitHub:</strong> <a className="text-primary underline" href="https://github.com/Rohan1572" target="_blank" rel="noreferrer">github.com/Rohan1572</a></p>
         </div>
         <form onSubmit={handleSubmit} className="card space-y-4">
           <input name="name" placeholder="Name" required className="input" />
