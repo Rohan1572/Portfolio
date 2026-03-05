@@ -1,4 +1,4 @@
-export type ProjectCategory = 'All' | 'FinTech' | 'Web Apps' | 'Tools';
+export type ProjectCategory = 'All' | 'FinTech' | 'Web Apps';
 
 export interface Project {
   title: string;
@@ -10,34 +10,25 @@ export interface Project {
   live: string;
 }
 
-export const projectFilters: ProjectCategory[] = ['All', 'FinTech', 'Web Apps', 'Tools'];
+export const projectFilters: ProjectCategory[] = ['All', 'FinTech', 'Web Apps'];
 
 export const projects: Project[] = [
   {
-    title: 'RiskPulse Treasury Dashboard',
+    title: 'CapitalForge',
     category: 'FinTech',
-    description: 'Real-time liquidity and exposure analytics dashboard with secure role-based workflows.',
-    stack: ['Next.js', 'TypeScript', 'Recharts', 'Auth0'],
+    description: 'Portfolio analytics platform with 10,000-path Monte Carlo simulations, strategy persistence, and AI-assisted risk insights.',
+    stack: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'OpenAI'],
     image: '/project-fintech.jpg',
-    github: 'https://github.com/Rohan1572/Portfolio',
-    live: '#',
+    github: 'https://github.com/Rohan1572/capital-forge',
+    live: 'https://rohan-gupta.vercel.app/',
   },
   {
-    title: 'TradeFlow Operations Suite',
+    title: 'Monopoly Game',
     category: 'Web Apps',
-    description: 'Workflow engine for onboarding and transaction review with intelligent status orchestration.',
-    stack: ['React', 'Node.js', 'Tailwind', 'Framer Motion'],
+    description: 'Real-time multiplayer board game with synchronized turns, configurable modes, and mobile-friendly gameplay.',
+    stack: ['React', 'Firebase Realtime Database', 'JavaScript', 'Responsive UI'],
     image: '/profile.jpg',
-    github: 'https://github.com/Rohan1572/Portfolio',
-    live: '#',
-  },
-  {
-    title: 'Dev Velocity CLI',
-    category: 'Tools',
-    description: 'Internal front-end tooling to scaffold secure UI modules and enforce code standards.',
-    stack: ['TypeScript', 'ESBuild', 'Jest', 'CI/CD'],
-    image: '/project-fintech.jpg',
-    github: 'https://github.com/Rohan1572/Portfolio',
-    live: '#',
+    github: 'https://github.com/Bhavya1912/monopoly-game',
+    live: 'https://monopoly-game-tau.vercel.app/',
   },
 ];
