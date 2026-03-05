@@ -32,6 +32,7 @@ src/
   components/
     About.tsx
     Contact.tsx
+    Education.tsx
     Experience.tsx
     Footer.tsx
     Hero.tsx
@@ -50,6 +51,16 @@ src/
     index.tsx
   styles/
     globals.css
+public/
+  assets/
+    archive/
+      RG logo.png
+      ROHAN GUPTA_auto_x1.jpg
+      tech post new 2.jpg
+      favicon-placeholder.txt
+  favicon.svg
+  og-image.svg
+  profile.jpg
 ```
 
 ## Features
@@ -102,4 +113,4 @@ Deploy easily to Vercel:
 - Update experience: `src/data/experience.ts`
 - Update skills: `src/data/skills.ts`
 - Replace social/contact identity in `src/components/Contact.tsx`
-
+- Keep production-ready static assets under `public/` and park legacy/raw media in `public/assets/archive/`.
