@@ -1,6 +1,0 @@
-.badges { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 1.3rem; }
-.badges span { border: 1px solid var(--border); background: var(--bg-card); padding: 0.4rem 0.72rem; border-radius: 999px; color: var(--text-soft); }
-.progressWrap { display: grid; gap: 0.9rem; }
-.row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem; }
-.track { height: 10px; border-radius: 999px; background: color-mix(in srgb, var(--border) 70%, transparent); overflow: hidden; }
-.fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--accent), #72c5ff); }
