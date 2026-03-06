@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/next';
 import '@/styles/globals.css';
 
 export default function App({ Component, pageProps, router }: AppProps) {
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         transition={{ duration: 0.35 }}
       >
         <Component {...pageProps} />
+        <Analytics />
       </motion.div>
     </AnimatePresence>
   );
