@@ -4,9 +4,10 @@ export const experience = [
     role: 'Frontend Developer (Analyst)',
     duration: 'Jan 2025 - Present',
     highlights: [
-      'Enhanced and maintained core frontend modules for enterprise fintech products built with Next.js and TypeScript.',
+      'Enhanced and maintained core frontend modules for enterprise fintech products built with Next.js and TypeScript, impacting production workflows across two major modules.',
       'Generated 2,000+ unit tests across 50+ suites using Jest, helping sustain 80%+ code coverage.',
       'Built reusable UI components to reduce duplication and speed up feature delivery across banking modules.',
+      'Improved UI responsiveness by optimizing rendering and implementing responsive design patterns.',
       'Diagnosed and resolved 10+ production issues to improve platform reliability and user experience.',
       'Collaborated with 10+ cross-functional team members across design, backend, and QA in Agile sprints.',
     ],

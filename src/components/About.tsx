@@ -8,8 +8,8 @@ export default function About() {
       <div className="card mt-6">
         <p>
           Frontend Developer with 1.5 years of experience building scalable digital banking platforms using React.js,
-          Next.js, and TypeScript. I focus on performance-driven web apps, resilient REST API integrations,
-          responsive UI architecture, and maintainable component systems for enterprise teams.
+          Next.js, and TypeScript. I specialize in high-performance web apps, REST API integrations, responsive UI
+          architecture, and maintainable component systems for enterprise fintech teams.
         </p>
       </div>
     </motion.section>

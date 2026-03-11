@@ -17,12 +17,12 @@ export default function Hero() {
     <section id="home" className="relative overflow-hidden py-24">
       <div className="absolute inset-0 bg-mesh animate-pulse opacity-80" />
       <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="relative mx-auto max-w-6xl px-4 text-center">
-        <motion.p variants={fadeInUp} className="mb-4 text-accent font-semibold">Frontend Developer at Deloitte · 1.5 Years Experience</motion.p>
+        <motion.p variants={fadeInUp} className="mb-4 text-accent font-semibold">Frontend Developer at Deloitte - 1.5 Years Experience</motion.p>
         <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl font-extrabold leading-tight">
           Building Scalable Frontends for Enterprise FinTech
         </motion.h1>
         <motion.p variants={fadeInUp} className="mt-5 text-slate-700 dark:text-slate-300 text-lg">
-          React.js · Next.js · TypeScript · API Integrations · 80%+ Test Coverage
+          React.js - Next.js - TypeScript - API Integrations - 80%+ Test Coverage
         </motion.p>
         <motion.p variants={fadeInUp} className="mt-6 text-primary text-xl font-semibold">I build: {rotating[index]}</motion.p>
         <motion.div variants={fadeInUp} className="mt-8 flex justify-center gap-4">
@@ -33,3 +33,4 @@ export default function Hero() {
     </section>
   );
 }
+

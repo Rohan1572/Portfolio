@@ -10,7 +10,7 @@ export default function Experience() {
         {experience.map((item) => (
           <motion.article key={`${item.company}-${item.role}`} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="relative card">
             <span className="absolute -left-9 top-8 h-4 w-4 rounded-full bg-primary" />
-            <h3 className="text-xl font-bold">{item.company} — {item.role}</h3>
+            <h3 className="text-xl font-bold">{item.company} - {item.role}</h3>
             <p className="text-sm text-slate-600 dark:text-slate-300">{item.duration}</p>
             <ul className="mt-3 list-disc pl-5 space-y-1">
               {item.highlights.map((point) => <li key={point}>{point}</li>)}
@@ -21,3 +21,4 @@ export default function Experience() {
     </section>
   );
 }
+
