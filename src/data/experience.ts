@@ -4,12 +4,12 @@ export const experience = [
     role: 'Frontend Developer (Analyst)',
     duration: 'Jan 2025 - Present',
     highlights: [
-      'Enhanced and maintained core frontend modules for enterprise fintech products built with Next.js and TypeScript, impacting production workflows across two major modules.',
-      'Generated 2,000+ unit tests across 50+ suites using Jest, helping sustain 80%+ code coverage.',
-      'Built reusable UI components to reduce duplication and speed up feature delivery across banking modules.',
-      'Improved UI responsiveness by optimizing rendering and implementing responsive design patterns.',
-      'Diagnosed and resolved 10+ production issues to improve platform reliability and user experience.',
-      'Collaborated with 10+ cross-functional team members across design, backend, and QA in Agile sprints.',
+      'Engineered and maintained features as a Next.js developer on a large-scale corporate banking platform, handling new feature delivery, bug fixes, and production issues across 2 parallel production environments.',
+      'Served as the lead frontend developer for the Intraday and TOD feature, owning end-to-end development, API integration, business logic accuracy, and user experience for banking workflows.',
+      'Delivered the Commercial Card payment initiation feature end-to-end using Next.js and TypeScript, from development through successful deployment to production.',
+      'Added Captcha in the pre-login journey to address an urgent production security requirement and contributed to the Commercial Cards module with bug fixes, UI/UX enhancements, and new feature development.',
+      'Authored an AI agents guide adopted by 40+ frontend developers, covering 10 practical use cases for bug fixing, code generation, and performance optimization with GitHub Copilot and AI-driven workflows.',
+      'Prototyped 2 frontend POCs for an automobile client using React.js, Next.js, and Vue.js, translating Figma designs into responsive UIs with full API integration and presenting the working solutions to stakeholders.',
     ],
   },
   {

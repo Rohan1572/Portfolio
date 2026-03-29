@@ -27,10 +27,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Rohan Gupta | Frontend Developer</title>
-        <meta name="description" content="Frontend Developer with 1.5 years of experience building scalable digital banking products with React, Next.js, and TypeScript." />
-        <meta property="og:title" content="Rohan Gupta | Frontend Developer" />
-        <meta property="og:description" content="Building high-performance frontend systems for enterprise fintech products." />
+        <title>Rohan Gupta | Frontend Developer at Deloitte</title>
+        <meta name="description" content="Frontend Developer with 1.5 years of experience at Deloitte building enterprise banking platforms with React, Next.js, TypeScript, and AI-augmented workflows." />
+        <meta property="og:title" content="Rohan Gupta | Frontend Developer at Deloitte" />
+        <meta property="og:description" content="Building production-ready frontend systems for enterprise fintech products." />
         <meta property="og:image" content="/og-image.svg" />
       </Head>
       <div className="cursor-dot" />

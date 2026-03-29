@@ -41,6 +41,7 @@ export default function Contact() {
           <p><strong>Location:</strong> New Delhi, India</p>
           <p><strong>LinkedIn:</strong> <a className="text-primary underline" href="https://www.linkedin.com/in/rohan-gupta-51b16615a/" target="_blank" rel="noreferrer">linkedin.com/in/rohan-gupta-51b16615a</a></p>
           <p><strong>GitHub:</strong> <a className="text-primary underline" href="https://github.com/Rohan1572" target="_blank" rel="noreferrer">github.com/Rohan1572</a></p>
+          <p><strong>Portfolio:</strong> <a className="text-primary underline" href="https://rohan-gupta.vercel.app/" target="_blank" rel="noreferrer">rohan-gupta.vercel.app</a></p>
         </div>
         <form onSubmit={handleSubmit} className="card space-y-4">
           <input name="name" placeholder="Name" required className="input" />

@@ -7,9 +7,9 @@ export default function About() {
       <h2 className="section-title">About</h2>
       <div className="card mt-6">
         <p>
-          Frontend Developer with 1.5 years of experience building scalable digital banking platforms using React.js,
-          Next.js, and TypeScript. I specialize in high-performance web apps, REST API integrations, responsive UI
-          architecture, and maintainable component systems for enterprise fintech teams.
+          Frontend Developer with 1.5 years of experience at Deloitte building enterprise-grade digital banking
+          platforms with React.js, Next.js, and TypeScript. I work across production feature delivery, API
+          integration, responsive UI architecture, and AI-augmented development workflows in Agile teams.
         </p>
       </div>
     </motion.section>

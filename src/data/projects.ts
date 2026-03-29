@@ -7,7 +7,7 @@ export interface Project {
   stack: string[];
   image: string;
   github: string;
-  live: string;
+  live?: string;
 }
 
 export const projectFilters: ProjectCategory[] = ['All', 'FinTech', 'Web Apps'];
@@ -16,16 +16,15 @@ export const projects: Project[] = [
   {
     title: 'CapitalForge',
     category: 'FinTech',
-    description: 'Portfolio analytics platform with 10,000-path Monte Carlo simulations, strategy persistence, and AI-assisted risk insights.',
+    description: 'Next.js portfolio analytics platform with 10,000-path Monte Carlo simulations, 6 asset classes, risk metrics, and OpenAI-assisted explanations.',
     stack: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'OpenAI API'],
     image: '/og-image.svg',
     github: 'https://github.com/Rohan1572/capital-forge',
-    live: 'https://rohan-gupta.vercel.app/',
   },
   {
     title: 'Monopoly Game',
     category: 'Web Apps',
-    description: 'Real-time multiplayer board game with synchronized turns, configurable modes, and mobile-friendly gameplay.',
+    description: 'Real-time Monopoly-style multiplayer game with 2 to 4 players, synchronized rooms, AI opponents, and a live strategy dashboard.',
     stack: ['React', 'Firebase Realtime Database', 'JavaScript', 'Responsive UI'],
     image: '/og-image.svg',
     github: 'https://github.com/Bhavya1912/monopoly-game',
@@ -34,7 +33,7 @@ export const projects: Project[] = [
   {
     title: 'AI Business Helper',
     category: 'Web Apps',
-    description: 'AI-powered business assistant with role-based modules for marketing, legal, HR, inventory, and customer relations.',
+    description: 'React business assistant with 5 department modules for marketing, legal, customer relations, inventory, and HR/hiring, powered by OpenAI.',
     stack: ['React', 'React Router', 'OpenAI API', 'Axios', 'CSS'],
     image: '/og-image.svg',
     github: 'https://github.com/Rohan1572/ai-business-helper',

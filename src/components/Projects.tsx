@@ -32,7 +32,7 @@ export default function Projects() {
             <div className="mt-3 flex flex-wrap gap-2">{project.stack.map((tech) => <span key={tech} className="text-xs rounded-full bg-primary/10 text-primary px-2 py-1">{tech}</span>)}</div>
             <div className="mt-4 flex gap-3">
               <a href={project.github} target="_blank" rel="noreferrer noopener" className="btn-secondary">GitHub</a>
-              <a href={project.live} target="_blank" rel="noreferrer noopener" className="btn-primary">Live Demo</a>
+              {project.live && <a href={project.live} target="_blank" rel="noreferrer noopener" className="btn-primary">Live Demo</a>}
             </div>
           </motion.article>
         ))}

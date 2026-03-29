@@ -15,8 +15,8 @@ export default function Education() {
         <motion.article initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="card">
           <h3 className="text-lg font-bold">Certifications & Achievements</h3>
           <ul className="mt-3 list-disc pl-5 space-y-1">
-            <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals</li>
-            <li>Published research paper: &quot;Exploiting Flaws in a Wi-Fi Network&quot; - IJERT Journal</li>
+            <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals, May 2023</li>
+            <li>Published research paper: &quot;Exploiting Flaws in a Wi-Fi Network&quot;, IJERT Journal, Jul 2022</li>
           </ul>
         </motion.article>
       </div>
