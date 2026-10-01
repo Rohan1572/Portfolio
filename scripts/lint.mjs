@@ -3,7 +3,7 @@ import { spawnSync } from "node:child_process";
 
 const required = [
   "node_modules/eslint/package.json",
-  "node_modules/eslint-config-next/package.json",
+  "node_modules/@next/eslint-plugin-next/package.json",
 ];
 
 const missing = required.filter((path) => !existsSync(path));

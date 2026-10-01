@@ -1,9 +1,8 @@
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTypescript from "eslint-config-next/typescript";
+import nextPlugin from "@next/eslint-plugin-next";
+import reactHooks from "eslint-plugin-react-hooks";
+import tseslint from "typescript-eslint";
 
 const config = [
-  ...nextVitals,
-  ...nextTypescript,
   {
     ignores: [
       ".next/**",
@@ -13,6 +12,9 @@ const config = [
       "next-env.d.ts",
     ],
   },
+  nextPlugin.configs["core-web-vitals"],
+  reactHooks.configs.flat["recommended-latest"],
+  ...tseslint.configs.recommended,
 ];
 
 export default config;
