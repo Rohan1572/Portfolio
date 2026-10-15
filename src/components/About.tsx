@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { fadeInUp } from '@/animations/fadeIn';
+import { fadeIn } from '@/animations/fadeIn';
 
 export default function About() {
   return (
-    <motion.section id="about" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="mx-auto max-w-6xl px-4 py-16">
+    <motion.section id="about" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="mx-auto max-w-6xl px-4 py-16">
       <h2 className="section-title">About</h2>
       <div className="card mt-6">
         <p>
